@@ -1,0 +1,9 @@
+<div *ngIf="info">
+    <h2>Bitcoin Information</h2>
+    <p>Updated: {{ info.time.updated }}</p>
+    <p>Bitcoin Rate in USD: {{ info.bpi.USD.rate }}</p>
+    <p>Bitcoin Rate in GBP: {{ info.bpi.GBP.rate }}</p>
+    <p>Bitcoin Rate in EUR: {{ info.bpi.EUR.rate }}</p>
+  </div>
+
+  <echarts [options]="chartOptions" theme="dark" style="height: 400px; width: 500px;"></echarts>
